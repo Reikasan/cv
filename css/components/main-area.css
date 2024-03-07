@@ -1,0 +1,24 @@
+.main {
+    padding: 2rem 0 2rem;
+}
+
+.main h3 span {
+    font-weight: 400;
+}
+
+.skill-list tr td:first-of-type {
+    font-weight: 700;
+    vertical-align: top;
+}
+.experience > div, .education > div{
+    margin-bottom: 30px;
+}
+
+.experience div ul, .edication div ul {
+    margin-top: 10px;
+}
+
+.experience li, .education li {
+    list-style: "- " inside;
+    margin-bottom: 5px;
+}

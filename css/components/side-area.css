@@ -1,0 +1,26 @@
+.sidebar {
+    padding: 2rem 2rem 2rem 0;
+    margin-top: 120px;
+}
+.sidebar div:first-child {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    
+}
+.sidebar img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.contact {
+    margin-top: 5px !important;
+}
+.contact table {
+    border-spacing: 10px;
+}
+
+.sidebar .container {
+    margin: 40px 0;
+}

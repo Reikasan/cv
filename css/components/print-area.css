@@ -1,0 +1,20 @@
+.printArea {
+    width: 816px;
+    height: 1200px;
+    background-color: #fff;
+    margin: 0 auto 50px;
+    padding: 50px;
+
+}
+.printArea .main .container {
+    margin: 35px 0;
+}
+.printArea .main.de .container {
+    margin: 20px 0;
+}
+.printArea .main .container.about-me {
+    padding-top: 10px;
+}
+.printArea .sidebar.de .container {
+    margin: 25px 0;
+}
