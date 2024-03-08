@@ -24,25 +24,25 @@ export const languagesArea = document.querySelector('.sidebar__content.languages
 export const languagesAreaTitle = languagesArea.querySelector('.title');
 export const languagesTableBody = languagesArea.querySelector('tbody');
 
-
 // Visa
 const visaEl = document.querySelector('.sidebar__content.visa');
 export const visaAreaTitle = visaEl.querySelector('.title');
 export const visaStatusEl = visaEl.querySelector('p');
+
 // About Me
-const aboutMeArea = document.querySelector('.main.about');
+const aboutMeArea = document.querySelector('.main__content.about');
 export const aboutMeAreaTitle = aboutMeArea.querySelector('.title');
 export const aboutMeParagraph = aboutMeArea.querySelector('p');
 
 // Skills
-const skillsArea = document.querySelector('.main.skills');
+const skillsArea = document.querySelector('.main__content.skills');
 export const skillsAreaTitle = skillsArea.querySelector('.title');
 export const skillTableBody = skillsArea.querySelector('tbody');
 
 // Experience
-const experienceArea = document.querySelector('.main.experience');
+const experienceArea = document.querySelector('.main__content.experience');
 export const experienceAreaWrapper = experienceArea.querySelector('.wrapper');
-export const experienceAreaTitle = educationArea.querySelector('.title');
+export const experienceAreaTitle = experienceArea.querySelector('.title');
 
 // Data
 export let datas = {
