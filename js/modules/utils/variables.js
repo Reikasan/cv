@@ -22,7 +22,7 @@ export const educationAreaWrapper = educationArea.querySelector('.wrapper');
 // Languages
 export const languagesArea = document.querySelector('.sidebar__content.languages');
 export const languagesAreaTitle = languagesArea.querySelector('.title');
-export const languagesList = languagesArea.querySelector('ul.language__list');
+export const languagesTableBody = languagesArea.querySelector('tbody');
 
 
 // Visa

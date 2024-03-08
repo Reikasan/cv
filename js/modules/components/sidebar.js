@@ -1,6 +1,6 @@
 import { addressEl, phoneEl, phoneElTd, emailEl, portfolioEl, githubEl, linkedinEl } from '../utils/variables.js';
 import { educationAreaTitle, educationAreaWrapper } from '../utils/variables.js';
-import { languagesAreaTitle ,languagesList } from '../utils/variables.js';
+import { languagesAreaTitle ,languagesTableBody } from '../utils/variables.js';
 import { visaAreaTitle, visaStatusEl } from '../utils/variables.js';
 import { datas } from '../utils/variables.js';
 
@@ -26,9 +26,9 @@ export function renderEducationData() {
     datas.educationData.forEach(education => {
         const educationDiv = document.createElement('div');
         educationDiv.innerHTML = `
-            <small class="date">${education.date}</small>
             <h3 class="school">${education.school} <span>- ${education.location}</span></h3>
-            <p class="description">${education.description}</p>
+            <small class="date">${education.date}</small>
+            <p class="description">- ${education.description}</p>
         `;
         educationAreaWrapper.appendChild(educationDiv);
     })
@@ -37,10 +37,14 @@ export function renderEducationData() {
 export function renderLanguageData() {
     languagesAreaTitle.textContent = datas.languageTitle;
     datas.languageData.forEach(language => {
-        const languageLi = document.createElement('li');
-        languageLi.innerHTML = 
-            `<b>${language.name}</b> - ${language.level}`;
-        languagesList.appendChild(languageLi);
+        const row = document.createElement('tr');
+        const languageName = document.createElement('td');
+        languageName.textContent = language.name;
+        const languageLevel = document.createElement('td');
+        languageLevel.textContent = language.level;
+        row.appendChild(languageName);
+        row.appendChild(languageLevel);
+        languagesTableBody.appendChild(row);
     })
 }
 
