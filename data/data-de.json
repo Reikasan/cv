@@ -10,7 +10,7 @@
         "github": "https://github.com/Reikasan",
         "linkedin": "https://www.linkedin.com/in/reika-akuzawa-8271b7242/"
     },
-    "languagesTitle": "Sprachen",
+    "languageTitle": "Sprachen",
     "languages": [
         {
             "name": "Deutsch",
@@ -25,13 +25,25 @@
             "level": "Muttersprache"
         }
     ],
+    "visaTitle": "Visum",
     "visa": "Unbefristete Daueraufenthalt",
+    "aboutMeTitle": "Über mich",
     "aboutMe": "Ich bin ein Webentwickler mit einer Leidenschaft für die Erstellung schöner und funktionaler Websites, der auf einen soliden Hintergrund in der Teamunterstützung in internationalen Unternehmen zurückgreifen kann. Meine Erfahrung hat meine Fähigkeit zu effektivem Multitasking und effizienter Organisation von Aufgaben geschärft. Ich suche nun eine Position, in der ich meine vielfältigen Fähigkeiten und meinen umfassenden Hintergrund einsetzen kann, um zum Wachstum des Unternehmens beizutragen.",
-    "skills": {
-        "frontend": "JavaScript/TypeScript, React, Vue, Material UI, HTML, CSS",
-        "backend": "PHP, Laravel, MySQL, Rest API",
-        "other": "Git, Webflow, Docker"
-    },
+    "skillsTitle": "Fähigkeiten",
+    "skills": [
+        {
+            "category": "frontend",
+            "skills": "JavaScript/TypeScript, React, Vue, Material UI, HTML, CSS"
+        },
+        {
+            "category": "backend",
+            "skills": "PHP, Laravel, MySQL, Rest API"
+        },
+        {
+            "category": "other",
+            "skills": "Git, Webflow, Docker"
+        }
+    ],
     "experienceTitle" : "Berufserfahrung",
     "experiences": [
         {
