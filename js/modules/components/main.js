@@ -9,6 +9,11 @@ export function renderAboutMeData() {
 }
 
 export function renderSkillData() {
+    // Clear the experience area before rendering new data
+    while(skillTableBody.firstChild) {
+        skillTableBody.removeChild(skillTableBody.firstChild);
+    }
+    
     skillsAreaTitle.textContent = datas.skillsTitle;
     datas.skills.forEach((skill)  => {
         const row = document.createElement('tr');
@@ -25,6 +30,11 @@ export function renderSkillData() {
 }
 
 export function renderExperienceData() {
+    // Clear the experience area before rendering new data
+    while(experienceAreaWrapper.firstChild) {
+        experienceAreaWrapper.removeChild(experienceAreaWrapper.firstChild);
+    }
+
     experienceAreaTitle.textContent = datas.experienceTitle;
     datas.experienceData.forEach(experience => {
         const experienceDiv = document.createElement('div');

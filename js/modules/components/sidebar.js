@@ -22,6 +22,11 @@ export function renderContactData() {
 }
 
 export function renderEducationData() {
+    // Clear the education area before rendering new data
+    while(educationAreaWrapper.firstChild) {
+        educationAreaWrapper.removeChild(educationAreaWrapper.firstChild);
+    }
+
     educationAreaTitle.textContent = datas.educationTitle;
     datas.educationData.forEach(education => {
         const educationDiv = document.createElement('div');
@@ -35,6 +40,11 @@ export function renderEducationData() {
 }
 
 export function renderLanguageData() {
+    // Clear the experience area before rendering new data
+    while(languagesTableBody.firstChild) {
+        languagesTableBody.removeChild(languagesTableBody.firstChild);
+    }
+    
     languagesAreaTitle.textContent = datas.languageTitle;
     datas.languageData.forEach(language => {
         const row = document.createElement('tr');

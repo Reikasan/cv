@@ -25,22 +25,22 @@ function selectLanguage() {
 }
 
 function mapData(data) {
-    datas.name = data.name;
-    datas.position = data.position;
-    datas.photo = data.photo;
-    datas.contactData = data.contact;
-    datas.languageTitle = data.languageTitle;
-    datas.languageData = data.languages;
-    datas.educationTitle = data.educationTitle;
-    datas.educationData = data.education;
-    datas.visaTitle = data.visaTitle;
-    datas.visa = data.visa;
-    datas.aboutMeTitle = data.aboutMeTitle;
-    datas.aboutMe = data.aboutMe;
-    datas.skillsTitle = data.skillsTitle;
-    datas.skills = data.skills;
-    datas.experienceTitle = data.experienceTitle;
-    datas.experienceData = data.experiences;
+    datas.name = JSON.parse(JSON.stringify(data.name));
+    datas.position = JSON.parse(JSON.stringify(data.position));
+    datas.photo = JSON.parse(JSON.stringify(data.photo));
+    datas.contactData = JSON.parse(JSON.stringify(data.contact));
+    datas.languageTitle = JSON.parse(JSON.stringify(data.languageTitle));
+    datas.languageData = JSON.parse(JSON.stringify(data.languages));
+    datas.educationTitle = JSON.parse(JSON.stringify(data.educationTitle));
+    datas.educationData = JSON.parse(JSON.stringify(data.education));
+    datas.visaTitle = JSON.parse(JSON.stringify(data.visaTitle));
+    datas.visa = JSON.parse(JSON.stringify(data.visa));
+    datas.aboutMeTitle = JSON.parse(JSON.stringify(data.aboutMeTitle));
+    datas.aboutMe = JSON.parse(JSON.stringify(data.aboutMe));
+    datas.skillsTitle = JSON.parse(JSON.stringify(data.skillsTitle));
+    datas.skills = JSON.parse(JSON.stringify(data.skills));
+    datas.experienceTitle = JSON.parse(JSON.stringify(data.experienceTitle));
+    datas.experienceData = JSON.parse(JSON.stringify(data.experiences));
 }
 
 function renderAllData() {
