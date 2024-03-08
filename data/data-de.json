@@ -1,0 +1,85 @@
+{
+    "name": "Reika Akuzawa",
+    "position": "Webentwickler",
+    "photo": "img/self-portrait-7-sq.jpg",
+    "contact": {
+        "phone": "",
+        "address": "Berlin, Germany",
+        "email": "l06981@googlemail.com",
+        "portfolio": "https://reikasan.github.io/portfolio-2023",
+        "github": "https://github.com/Reikasan",
+        "linkedin": "https://www.linkedin.com/in/reika-akuzawa-8271b7242/"
+    },
+    "languagesTitle": "Sprachen",
+    "languages": [
+        {
+            "name": "Deutsch",
+            "level": "C1"
+        },
+        {
+            "name": "Englisch",
+            "level": "Sehr gut in Wort und Schrift"
+        },
+        {
+            "name": "Japanisch",
+            "level": "Muttersprache"
+        }
+    ],
+    "visa": "Unbefristete Daueraufenthalt",
+    "aboutMe": "Ich bin ein Webentwickler mit einer Leidenschaft für die Erstellung schöner und funktionaler Websites, der auf einen soliden Hintergrund in der Teamunterstützung in internationalen Unternehmen zurückgreifen kann. Meine Erfahrung hat meine Fähigkeit zu effektivem Multitasking und effizienter Organisation von Aufgaben geschärft. Ich suche nun eine Position, in der ich meine vielfältigen Fähigkeiten und meinen umfassenden Hintergrund einsetzen kann, um zum Wachstum des Unternehmens beizutragen.",
+    "skills": {
+        "frontend": "JavaScript/TypeScript, React, Vue, Material UI, HTML, CSS",
+        "backend": "PHP, Laravel, MySQL, Rest API",
+        "other": "Git, Webflow, Docker"
+    },
+    "experienceTitle" : "Berufserfahrung",
+    "experiences": [
+        {
+            "date": "Juli 2022 - Dezember 2023",
+            "company": "17GRAD",
+            "location": "Berlin",
+            "position": "Junior-Webentwickler",
+            "descriptions": [
+                "Leitete die Entwicklung einer Laravel-basierten Webanwendung für den internen Gebrauch, die die Sortierung von Banktransaktionsdaten und Rechnungen optimierte, was zu einer erheblichen Zeit- und Arbeitserleichterung führte.",
+                "Ich habe als Hauptentwickler an einem Projekt zur Erneuerung der Website mitgewirkt und mit den Kunden zusammengearbeitet, um ihre technischen Ziele zu erreichen und den Projekterfolg sicherzustellen.",
+                "Ich habe aktiv an der Optimierung und Entwicklung mehrerer React- und Vue-Projekte mitgewirkt und deren Funktionalität und Leistung verbessert."
+            ]
+        },
+        {
+            "date": "Januar 2014 - Juni 2014",
+            "company": "GlaxoSmithKline K.K.",
+            "location": "Tokyo, Japan",
+            "position": "Sekretärin",
+            "descriptions": [ "Ich unterstützte 6 HR-Spezialisten, indem ich Zeitpläne verwaltete, Dokumente erstellte, Einstellungsprozesse organisierte und Abteilungsveranstaltungen mit über 50 Teilnehmern koordinierte bei einer internatilnalen medizinischen Unternehme." ]
+        },
+        {
+            "date": "Jani 2012 - Dezember 2013",
+            "company": "Gap Japan K.K.",
+            "location": "Tokyo, Japan",
+            "position": "Team Assistentin",
+            "descriptions": ["In internationalen Modefirma war ich verantwortlich für die Kommunikation mit über 100 Geschäften bezüglich hausintern erstellter Marketingmaterialien, die Verwaltung von Zeitplänen für diese Materialien, die Übersetzung von Englisch ins Japanische sowie die Zusammenarbeit mit dem kreativen Team in den USA bezüglich der Marketingmaterialien."]
+        },
+        {
+            "date": "Oktober 2006 - März 2009",
+            "company": "Sakha Diamond",
+            "location": "Tokyo, Japan",
+            "position": "Merchandiser",
+            "descriptions": ["Ich habe mich auf das Sortieren von Diamanten und das Designen von Accessoires spezialisiert. Zusätzlich habe ich Accessoires für meinen eigenen Online-Shop gekauft."]
+        }
+    ],
+    "educationTitle" : "Bildung",
+    "education" : [
+        {
+            "date": "Oktober 2018 - Mai 2019",
+            "school": "Sky Akademie",
+            "location": "Berlin",
+            "description": "Kurs für Frontend-Developer  (HTML, CSS und JavaScript)"
+        },
+        {
+            "date": "Oktober 2007 - März 2014",
+            "school": "The Open University of Japan",
+            "location": "Tokyo, Japan",
+            "description": "Bakkalaureus der philosophischen Fakultät, Kurs in Humanität and Kultur"
+        }
+    ]
+  }

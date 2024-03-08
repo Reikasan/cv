@@ -1,0 +1,85 @@
+{
+    "name": "Reika Akuzawa",
+    "position": "Web Developer",
+    "photo": "img/self-portrait-7-sq.jpg",
+    "contact": {
+        "phone": "",
+        "address": "Berlin, Germany",
+        "email": "l06981@googlemail.com",
+        "portfolio": "https://reikasan.github.io/portfolio-2023",
+        "github": "https://github.com/Reikasan",
+        "linkedin": "https://www.linkedin.com/in/reika-akuzawa-8271b7242/"
+    },
+    "languagesTitle": "Languages",
+    "languages": [
+        {
+            "name": "German",
+            "level": "C1"
+        },
+        {
+            "name": "English",
+            "level": "Advanced"
+        },
+        {
+            "name": "Japanese",
+            "level": "Mother tongue"
+        }
+    ],
+    "visa": "Permanent residence in Germany",
+    "aboutMe": "I am a Web Developer with a passion for creating beautiful and functional websites, leveraging a robust background in team assistance within international companies. My experience has honed my ability to multitask effectively and organize tasks efficiently. I am now seeking a position where I can apply my diverse skills and extensive background to contribute to the growth of the company.",
+    "skills": {
+        "frontend": "JavaScript/TypeScript, React, Vue, Material UI, HTML, CSS",
+        "backend": "PHP, Laravel, MySQL, Rest API",
+        "other": "Git, Webflow, Docker"
+    },
+    "experienceTitle" : "Experience",
+    "experiences": [
+        {
+            "date": "July 2022 - December 2023",
+            "company": "17GRAD",
+            "location": "Berlin",
+            "position": "Junior-Web-Developer",
+            "descriptions": [
+                "Spearheaded the development of a Laravel-based web application for internal use, optimizing the sorting of bank transaction data and invoices, resulting in significant time and workload reduction.",
+                "Contributed as a key developer in a website renewal project, collaborating with clients to meet their technical goals and ensure project success.",
+                "I actively contributed to the optimization and development of several React and Vue projects, enhancing their functionality and performance."
+            ]
+        },
+        {
+            "date": "January 2014 - June 2014",
+            "company": "GlaxoSmithKline K.K.",
+            "location": "Tokyo, Japan",
+            "position": "Office administrator",
+            "descriptions": [ "I supported 6 HR specialists as a secretary by managing schedules, creating documents, organizing hiring processes, and coordinating departmental events with over 50 participants." ]
+        },
+        {
+            "date": "June 2012 - December 2013",
+            "company": "Gap Japan K.K.",
+            "location": "Tokyo, Japan",
+            "position": "Team Assistant",
+            "descriptions": ["In international fashion company, I was responsible for communicating with over 100 stores regarding in-house created marketing materials, managing schedules for these materials, translating from English to Japanese, and collaborating with the creative team in the USA regarding marketing materials."]
+        },
+        {
+            "date": "October 2006 - March 2009",
+            "company": "Sakha Diamond",
+            "location": "Tokyo, Japan",
+            "position": "Merchandiser",
+            "descriptions": ["I specialize in sorting diamonds and designing accessories. Additionally, I purchase accessories for my own online shop."]
+        }
+    ],
+    "educationTitle" : "Education",
+    "education" : [
+        {
+            "date": "October 2018 - May 2019",
+            "school": "Sky Akademie",
+            "location": "Berlin",
+            "description": "Course for Frontend-Developer  (HTML, CSS and JavaScript)"
+        },
+        {
+            "date": "October 2007 - March 2014",
+            "school": "The Open University of Japan",
+            "location": "Tokyo, Japan",
+            "description": "Bachelor of Arts, Course in Humanities and Culture"
+        }
+    ]
+}
