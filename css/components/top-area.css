@@ -1,29 +1,23 @@
 .top {
     width: 816px;
     height: 170px;
-    margin: -50px;
-    padding: 70px 50px 50px;
+    margin: -50px -50px 0;
+    padding: 65px 50px 50px;
     background-color: #BB8090; 
     position: relative;
-}
-#name {
-    /* position: absolute;
-    bottom: 15px;
-    left: var(--from-left); */
-    color: #fff;
 }
 #name .position {
     font-size: 20px;
 }
 #name .name {
     font-size: 50px;
+    text-transform: uppercase;
 }
 #photo {
     position: absolute;
     bottom: -100px;
     left: 60px;
 }
-
 #photo img {
     width: 200px;
     height: 200px;
