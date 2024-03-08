@@ -1,16 +1,7 @@
 .sidebar {
     padding: 2rem 2rem 2rem 0;
-    margin-top: 120px;
-}
-.sidebar__content {
-    margin: 40px 0;
-}
-.contact {
-    margin-top: 5px !important;
+    margin-top: 50px;
 }
 .sidebar__content p {
     margin-top: 5px;
-}
-.sidebar__content .wrapper div {
-    margin-bottom: 2rem;
 }
