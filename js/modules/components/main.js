@@ -38,6 +38,7 @@ export function renderExperienceData() {
     experienceAreaTitle.textContent = datas.experienceTitle;
     datas.experienceData.forEach(experience => {
         const experienceDiv = document.createElement('div');
+        experienceDiv.classList.add('content-element');
         experienceDiv.innerHTML = `
                     <h3 class="position">${experience.position}</h3>
                     <h4 class="company">${experience.company} <span>- ${experience.location}</span></h4>

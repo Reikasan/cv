@@ -1,17 +1,23 @@
 import { languageSelect }  from '../utils/variables.js';
-import { datas } from '../utils/variables.js';
+import { datas, pages } from '../utils/variables.js';
+import { printArea } from '../utils/variables.js';
 
 import { renderTopElementContents } from './top.js';
 import { renderContactData, renderEducationData, renderLanguageData, renderVisaStatus } from './sidebar.js';
 import { renderAboutMeData, renderSkillData, renderExperienceData } from './main.js';
+import { renderFooter } from './footer.js';
 
-window.document.addEventListener('DOMContentLoaded', fetchData);
-languageSelect.addEventListener('change', fetchData);
+window.addEventListener('DOMContentLoaded', displayAlldata);
+languageSelect.addEventListener('change', displayAlldata);
 
-function fetchData() {
+async function displayAlldata() {
     const data = selectLanguage();
+    await fetchAndRenderData(data);
+    adjustPrintAreaContents();
+}
 
-    fetch(data)
+function fetchAndRenderData(data) {
+    return fetch(data)
         .then(response => response.json())
         .then(data => {
             mapData(data);
@@ -52,7 +58,34 @@ function renderAllData() {
     renderAboutMeData();
     renderSkillData();
     renderExperienceData();
+    renderFooter();
 }
 
 
+function adjustPrintAreaContents() {
+    let totalPageHeight = 0;
+    // const pageHeight = 1050;
+    let pageCounter = 1;
+    const contentElements = document.querySelectorAll('.content-element');
 
+    for(let i = 0; i < contentElements.length; i++) {
+        totalPageHeight += contentElements[i].offsetHeight;
+        if(totalPageHeight > pages.height) {
+            const marginTop = 1270 - totalPageHeight;
+            renderFooter(contentElements[i]);
+            addMarginTop(contentElements[i], marginTop);
+            pageCounter++;
+
+            console.log(totalPageHeight);
+            totalPageHeight = 0;  
+            printArea.style.height = `${pageCounter * pages.printAreaHeight}px`;
+        }
+    }
+}
+
+function addMarginTop(element, margin) {
+    const div = document.createElement('div');
+    div.classList.add('page-top-margin');
+    div.style.marginTop = `${margin}px`;
+    element.parentNode.insertBefore(div, element);
+}

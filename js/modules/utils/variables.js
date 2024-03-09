@@ -1,4 +1,7 @@
+export const bgArea = document.querySelector('.bg-area');
+export const printArea = document.querySelector('.printArea');
 export const languageSelect = document.querySelector('select#language');
+// export const contentElements = document.querySelectorAll('.content-element');
 
 export const nameEl = document.querySelector('#name .name');
 export const positionEl = document.querySelector('#name .position');
@@ -12,7 +15,7 @@ export const githubEl = contactArea.querySelector('.github a');
 export const linkedinEl = contactArea.querySelector('.linkedin a');
 export const addressEl = contactArea.querySelector('.address td:nth-child(2)');
 export const phoneEl = contactArea.querySelector('.phone');
-export const phoneElTd = contactArea.querySelector('.phone td');
+export const phoneElTd = contactArea.querySelector('.phone td:nth-child(2)');
 
 // Education
 const educationArea = document.querySelector('.sidebar__content.education');
@@ -62,3 +65,9 @@ export let datas = {
     experienceTitle: '',
     experienceData: {},
 };
+
+// Pages
+export let pages = {
+    printAreaHeight: 1152,
+    height: 1050,
+}
