@@ -10,7 +10,7 @@
         "github": "https://github.com/Reikasan",
         "linkedin": "https://www.linkedin.com/in/reika-akuzawa-8271b7242/"
     },
-    "languagesTitle": "Languages",
+    "languageTitle": "Languages",
     "languages": [
         {
             "name": "German",
@@ -33,7 +33,7 @@
     "skills": [
         {
             "category": "frontend",
-            "skills": "JavaScript/TypeScript, React, Vue, Material UI, HTML, CSS"
+            "skills": "JavaScript/TypeScript, React, Vue, HTML, CSS"
         },
         {
             "category": "backend",
