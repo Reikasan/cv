@@ -1,3 +1,7 @@
 :root {
-    --from-left: 300px;
+    --pink: #BB8090;
+    --bgColor: #ddd;
+    --grayText: #4d4d4d;
+    --footerText: #4d4d4da6;
+    --printWidth: 816px;
 }

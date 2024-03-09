@@ -1,0 +1,44 @@
+footer {
+    color: var(--grayText);
+    width: var(--printWidth);
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    display: block;
+    opacity: 0.4;
+}
+footer::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--grayText);
+    opacity: 0.4;
+}
+footer.inside {
+    left: 0;
+    top: 1100px;
+}
+footer.last {
+    bottom: 0;
+    left: 0;
+}
+footer div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+}
+.page-top-margin {
+    break-before: page;
+    height: 60px;
+    margin-bottom: 0;
+}
+.page-top-margin::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2rem;
+    background-color: var(--bgColor);
+    position: absolute;
+    left: 0;
+}

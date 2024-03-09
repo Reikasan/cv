@@ -26,7 +26,7 @@ hr {
     margin: 5px 0 15px;
 }
 table {
-    border-spacing: 10px;
+    border-spacing: 6px;
     -webkit-border-horizontal-spacing: 0;
 }
 table td:first-of-type {
@@ -39,7 +39,7 @@ table td:first-of-type {
     display: none;
 }
 .bg-area {
-    background-color: #ddd;
+    background-color: var(--bgColor);
     font-size: 14px;
     line-height: 1.3;
     padding: 100px 0;
@@ -61,7 +61,7 @@ table td:first-of-type {
 .wrapper div {
     margin-bottom: 1.5rem;
 }
-.wrapper div:last-child {
+.wrapper div.page-top-margin {
     margin-bottom: 0;
 }
 .grid {
@@ -77,13 +77,15 @@ table td:first-of-type {
     text-align: center;
 }
 .main__content, .sidebar__content {
-    padding: 20px 0;
+    padding: 1rem 0;
     
 }
+
 
 @media print {
     .bg-area {
         visibility: hidden;
+        padding: 0;
     }
 
     .printArea {
@@ -91,5 +93,13 @@ table td:first-of-type {
         position: absolute;
         left: 0;
         top: 0; 
+    }
+    .page-top-margin {
+        margin-top: 0;
+        height: 70px;
+    }
+    .page-top-margin::before {
+        display: none;
+        height: 0;
     }
 }
