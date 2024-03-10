@@ -64,6 +64,8 @@ export let datas = {
     educationData: {},
     experienceTitle: '',
     experienceData: {},
+    githubProjects: {},
+    githubProjectsTitle: '',
 };
 
 // Pages
@@ -71,3 +73,8 @@ export let pages = {
     printAreaHeight: 1152,
     height: 1050,
 }
+
+// Project
+export const githubProjectArea = document.querySelector('.github-projects');
+export const githubProjectTitle = githubProjectArea.querySelector('.title');
+export const githubProjectWrapper = githubProjectArea.querySelector('.wrapper');

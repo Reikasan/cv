@@ -5,6 +5,7 @@ import { printArea } from '../utils/variables.js';
 import { renderTopElementContents } from './top.js';
 import { renderContactData, renderEducationData, renderLanguageData, renderVisaStatus } from './sidebar.js';
 import { renderAboutMeData, renderSkillData, renderExperienceData } from './main.js';
+import { renderGithubProjects } from './project.js';
 import { renderFooter } from './footer.js';
 
 window.addEventListener('DOMContentLoaded', displayAlldata);
@@ -47,6 +48,8 @@ function mapData(data) {
     datas.skills = JSON.parse(JSON.stringify(data.skills));
     datas.experienceTitle = JSON.parse(JSON.stringify(data.experienceTitle));
     datas.experienceData = JSON.parse(JSON.stringify(data.experiences));
+    datas.githubProjectsTitle = JSON.parse(JSON.stringify(data.githubTitle));
+    datas.githubProjects = JSON.parse(JSON.stringify(data.githubProject));
 }
 
 function renderAllData() {
@@ -58,6 +61,7 @@ function renderAllData() {
     renderAboutMeData();
     renderSkillData();
     renderExperienceData();
+    renderGithubProjects();
     renderFooter();
 }
 
@@ -75,7 +79,7 @@ function adjustPrintAreaContents() {
             renderFooter(contentElements[i]);
             addMarginTop(contentElements[i], marginTop);
             pageCounter++;
-
+            console.log(pageCounter);
             console.log(totalPageHeight);
             totalPageHeight = 0;  
             printArea.style.height = `${pageCounter * pages.printAreaHeight}px`;

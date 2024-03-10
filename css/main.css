@@ -2,6 +2,7 @@
 @import './components/main-area.css';
 @import './components/side-area.css';
 @import './components/top-area.css';
+@import './components/project.css';
 @import './components/footer.css';
 
 @import './utils/common-style.css';
