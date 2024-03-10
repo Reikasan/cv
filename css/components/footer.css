@@ -30,7 +30,7 @@ footer div {
 }
 .page-top-margin {
     break-before: page;
-    height: 60px;
+    height: 80px;
     margin-bottom: 0;
 }
 .page-top-margin::before {
