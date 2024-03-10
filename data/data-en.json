@@ -93,5 +93,36 @@
             "location": "Tokyo, Japan",
             "description": "Bachelor of Arts, Course in Humanities and Culture"
         }
+    ],
+    "githubTitle": "Github-Projekte",
+    "githubProject": [
+        {
+            "name": "Portfolio",
+            "image": "img/portfolio.png",
+            "technologies": "React, TypeScript, SCSS",
+            "link": "https://github.com/Reikasan/portfolio-2023/",
+            "live": "https://reikasan.github.io/portfolio-2023"
+        },
+        {
+            "name": "TicTacToe",
+            "image": "img/tictactoe.png",
+            "technologies": "HTML, CSS, JavaScript",
+            "link": "https://github.com/Reikasan/tictactoe",
+            "live": "https://reikasan.github.io/tictactoe"
+        },
+        {
+            "name": "Book App",
+            "image": "img/book-app.png",
+            "technologies": "Laravel, MySQL, Google Books API",
+            "link": "https://github.com/Reikasan/laravel-book-app",
+            "live": ""
+        },
+        {
+            "name": "CV Template",
+            "image": "img/cv.png",
+            "technologies": "HTML, CSS, JavaScript",
+            "link": "https://github.com/Reikasan/cv",
+            "live": "https://reikasan.github.io/cv"
+        }
     ]
 }
