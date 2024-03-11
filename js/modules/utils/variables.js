@@ -70,8 +70,9 @@ export let datas = {
 
 // Pages
 export let pages = {
-    printAreaHeight: 1152,
+    printAreaHeight: 1120,
     height: 1050,
+    counter: 1,
 }
 
 // Project

@@ -1,4 +1,4 @@
-import { languageSelect }  from '../utils/variables.js';
+import { bgArea, languageSelect }  from '../utils/variables.js';
 import { datas, pages } from '../utils/variables.js';
 import { printArea } from '../utils/variables.js';
 
@@ -67,22 +67,22 @@ function renderAllData() {
 
 
 function adjustPrintAreaContents() {
+    pages.counter = 1;
     let totalPageHeight = 0;
-    // const pageHeight = 1050;
-    let pageCounter = 1;
+    const pageHeight = 1240;
     const contentElements = document.querySelectorAll('.content-element');
 
     for(let i = 0; i < contentElements.length; i++) {
         totalPageHeight += contentElements[i].offsetHeight;
         if(totalPageHeight > pages.height) {
-            const marginTop = 1270 - totalPageHeight;
+            const marginTop = pageHeight - totalPageHeight;
             renderFooter(contentElements[i]);
             addMarginTop(contentElements[i], marginTop);
-            pageCounter++;
-            console.log(pageCounter);
+            pages.counter++;
+            console.log(pages.counter);
             console.log(totalPageHeight);
             totalPageHeight = 0;  
-            printArea.style.height = `${pageCounter * pages.printAreaHeight}px`;
+            printArea.style.height = `${pages.counter * pages.printAreaHeight}px`;
         }
     }
 }
@@ -92,4 +92,9 @@ function addMarginTop(element, margin) {
     div.classList.add('page-top-margin');
     div.style.marginTop = `${margin}px`;
     element.parentNode.insertBefore(div, element);
+}
+
+
+window.onbeforeprint = function changeBackgroundHeight() {
+    bgArea.style.height = `${pages.counter * pages.printAreaHeight}px`;
 }

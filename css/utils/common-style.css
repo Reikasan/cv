@@ -49,7 +49,7 @@ table td:first-of-type {
 }
 .language-select {
     position: absolute;
-    top: 4cqb;
+    top: 40px;
     right: 20px;
 }
 .language-select select {
@@ -83,25 +83,27 @@ table td:first-of-type {
     
 }
 
-
 @media print {
-    .bg-area {
-        visibility: hidden;
-        padding: 0;
+    .bg-area.print {
+        padding: 0;    
+    } 
+    .language-select {
+        display: none;
     }
-
     .printArea {
-        visibility: visible;
         position: absolute;
         left: 0;
         top: 0; 
     }
     .page-top-margin {
-        margin-top: 0;
-        height: 70px;
+        height: 80px;
     }
     .page-top-margin::before {
         display: none;
         height: 0;
+    }
+    .project__image img {
+        box-shadow: none !important;
+        border: solid 1px var(--bgColor);
     }
 }
