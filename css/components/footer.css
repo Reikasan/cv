@@ -10,14 +10,14 @@ footer {
 footer::before {
     content: "";
     display: block;
-    width: 100%;
+    width: var(--printWidth);
     height: 1px;
     background-color: var(--grayText);
     opacity: 0.4;
 }
 footer.inside {
     left: 0;
-    top: 1100px;
+    top: 1070px;
 }
 footer.last {
     bottom: 0;
@@ -29,7 +29,7 @@ footer div {
     margin: 15px;
 }
 .page-top-margin {
-    break-before: page;
+    break-before: always;
     height: 80px;
     margin-bottom: 0;
 }
