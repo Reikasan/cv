@@ -1,3 +1,4 @@
+export const titleEl = document.querySelector('title');
 export const bgArea = document.querySelector('.bg-area');
 export const printArea = document.querySelector('.printArea');
 export const languageSelect = document.querySelector('select#language');

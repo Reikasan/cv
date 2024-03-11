@@ -1,4 +1,4 @@
-import { bgArea, languageSelect }  from '../utils/variables.js';
+import { bgArea, languageSelect, titleEl }  from '../utils/variables.js';
 import { datas, pages } from '../utils/variables.js';
 import { printArea } from '../utils/variables.js';
 
@@ -32,6 +32,7 @@ function selectLanguage() {
 }
 
 function mapData(data) {
+    datas.title = JSON.parse(JSON.stringify(data.title));
     datas.name = JSON.parse(JSON.stringify(data.name));
     datas.position = JSON.parse(JSON.stringify(data.position));
     datas.photo = JSON.parse(JSON.stringify(data.photo));
@@ -53,6 +54,7 @@ function mapData(data) {
 }
 
 function renderAllData() {
+    renderTitle();
     renderTopElementContents();
     renderContactData();
     renderEducationData();
@@ -65,6 +67,9 @@ function renderAllData() {
     renderFooter();
 }
 
+function renderTitle() {
+    titleEl.textContent = datas.title;
+}
 
 function adjustPrintAreaContents() {
     pages.counter = 1;
